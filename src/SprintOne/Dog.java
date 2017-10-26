@@ -2,6 +2,10 @@ package SprintOne;
 
 public class Dog extends Animal{
 
+    public String toString(){
+        return "Hello";
+    }
+
     @Override
     void isItOnEarth() {
         super.isItOnEarth();
