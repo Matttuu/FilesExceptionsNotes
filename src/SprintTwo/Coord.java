@@ -1,5 +1,5 @@
 package SprintTwo;
-
+// https://www.youtube.com/watch?v=SRun3TjAqwQ
 public class Coord {
 
     public final int row;
