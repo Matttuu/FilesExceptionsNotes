@@ -22,5 +22,30 @@ public class Main {
 
 
         System.out.println( (double) 9/ 2); // We can override by default by casting and tell it what type it should be.
+
+
+        /** Equal method explained
+         * If you use String s1 == String s2, it'll say they are the same because String is NOT a primitive type.
+         * But if you do String s2 = "Hi ";
+         * s2 = s2 + "there";      Then the result will show they are NOT equal.
+         * The == points to the reference. And the String class is immuteable
+         * The java compiler is smart enough to recognize that String is immuteable, so the compiler thinks they are the same.
+         * But you can work around by making use of "line 29-30" code.
+         * So with strings and objects we use .equals
+         */
+
+
+        Person p = new Person(); // Object 1
+        Person q = new Person(); // Object 2
+        p.name = "bob"; // Initializing
+        q.name = "bob"; // Initializing
+
+         if(p == q) { // test they are referencing the exact same object, this is only true if "p" and "q" are the same object.
+          //   if (p.equals(q)) { // Does the same thing as the " == " operators.
+            System.out.println("They are equal");
+        }
+        else {
+            System.out.println("They are NOT equal");
+        }
     }
 }
